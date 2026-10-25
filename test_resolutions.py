@@ -6,6 +6,7 @@ import unittest
 from unittest.mock import patch
 
 import pledge
+import last_debugger_repaired as repaired
 from puzzle_audit import (
     audit_all, caesar_decode, keyed_alphabet, literal_assignment,
     parity, solve_congruences, spiral_read, witness_truths,
@@ -110,6 +111,33 @@ class PledgeTests(unittest.TestCase):
             dest = Path(directory) / "pledge.txt"
             self.assertEqual(pledge.main(["--output", str(dest)]), 0)
             self.assertEqual(dest.read_text(encoding="utf-8"), pledge.render())
+
+
+class RepairedDebuggerTests(unittest.TestCase):
+    def test_all_stages_form_a_coherent_chain(self):
+        result = repaired.solve()
+        self.assertEqual(result["shift"], 3)
+        self.assertEqual(result["stage1"], "THE NEXT CLUE IS IN THE NUMBERS")
+        self.assertEqual(result["stage2"], "USE HIDDEN AS THE KEY")
+        self.assertEqual(result["keyword"], "HIDDEN")
+        self.assertEqual(result["stage3"], "SPIRAL")
+        self.assertEqual(result["stage4"], "XUXOXYXSXAXWXGXUXBXEXHXT")
+        self.assertEqual(result["stage5_letters"], "THEBUGWASYOU")
+        self.assertEqual(result["punchline"], "THE BUG WAS YOU.")
+
+    def test_keyed_cipher_roundtrip_uses_stage2_keyword(self):
+        normal = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        encode = dict(zip(normal, keyed_alphabet(repaired.solve()["keyword"])))
+        self.assertEqual("".join(encode[c] for c in "SPIRAL"), repaired.STAGE3)
+
+    def test_grid_contains_exactly_one_ignored_cell(self):
+        self.assertEqual(sum(row.count("#") for row in repaired.GRID), 1)
+        self.assertEqual(sum(len(row.split()) for row in repaired.GRID), 25)
+
+    def test_damaged_route_is_rejected(self):
+        with patch.object(repaired, "STAGE3", "AAAAAA"):
+            with self.assertRaisesRegex(ValueError, "grid route"):
+                repaired.solve()
 
 
 if __name__ == "__main__":

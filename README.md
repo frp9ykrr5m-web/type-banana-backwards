@@ -6,6 +6,7 @@ This repository contains reproducible results for issues #2–#6. It uses only t
 
 ```sh
 python puzzle_audit.py
+python last_debugger_repaired.py
 python -m unittest -v
 ```
 
@@ -25,10 +26,10 @@ The default delay is 0.20 seconds per character. Use `--delay 0.5` for a slower 
 
 | Issue | Result |
 | --- | --- |
-| #2 — The Last Debugger | All specified transformations reproduced. The posted data does not determine the promised final sentence. |
+| #2 — The Last Debugger | Original data audited; a separately labeled coherent repaired edition now solves to `THE BUG WAS YOU.` |
 | #3 — The Archive of Ten Locks | Determinate locks solved; contradictions and the missing final chain documented. |
 | #4 — 2 1/2 | Same literal puzzle data and results as #3; invalid pasted Python is handled as data. |
 | #5 — 2 1/2 .2 | Same literal puzzle data and results as #3; the larger number in the print label does not change the computation. |
 | #6 — happy bumpy bugger | Complete 52-repetition artifact plus optional slow-output program. |
 
-The puzzle issues remain unresolved until the author supplies corrected clues. A made-up punchline would not solve the posted puzzles.
+The repaired edition in `last_debugger_repaired.py` deliberately chooses a new punchline; it does not pretend that answer was recoverable from the original inputs. The original audit remains available. The Archive puzzle issues #3–#5 still need corrected clues.

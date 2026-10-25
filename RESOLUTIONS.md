@@ -17,6 +17,18 @@ These results apply to the statements saved in `issue_snapshots.json`. Run `pyth
 
 There is no short English sentence at the end of either specified interpretation. Stage 1 has transcription errors, Stage 2 does not identify one unambiguous keyword, Stage 3 does not lead into the grid, and Stage 4's prose and function disagree about punctuation. A corrected keyword/ciphertext and grid or extraction rule are needed to recover an intended punchline.
 
+### Coherent repaired edition
+
+At the user's subsequent request to fix this puzzle, `last_debugger_repaired.py` provides a separate repaired edition. Its **newly chosen** punchline is **THE BUG WAS YOU.** This is not claimed to be the missing original answer.
+
+1. Corrected Stage 1 decodes with shift 3 to `THE NEXT CLUE IS IN THE NUMBERS`.
+2. The replacement A1Z26 numbers decode to `USE HIDDEN AS THE KEY`.
+3. The keyed ciphertext `SPFRHK`, using `HIDDEN`, decodes to `SPIRAL`.
+4. The repaired 5×5 grid, read in that clockwise spiral while ignoring its one `#`, gives `XUXOXYXSXAXWXGXUXBXEXHXT`.
+5. Reverse that string and take every second character starting with the first: `THEBUGWASYOU`. The repaired final clue explicitly supplies word lengths **3, 3, 3, 3**, yielding the sentence above.
+
+Run `python last_debugger_repaired.py` to see every stage. Regression tests check the full chain, keyed-cipher roundtrip, ignored grid cell, and rejection of a damaged route.
+
 ## #3, #4, and #5 — The Archive of Ten Locks
 
 The three issues contain identical literal inputs for all ten locks. Their differences are formatting and text printed before the congruence result. The enormous numbers in that printed label are not arguments to the calculation and do not define a usable additional arithmetic expression.
@@ -52,4 +64,4 @@ The audit fixes the executable parity algorithm in its own implementation and pr
 
 ## Validation
 
-The 19 standard-library tests verify the exact decoded outputs, malformed-source literal extraction, non-execution of issue code, shortest route, the witness contradiction, congruence correctness and minimality, all 256 eight-bit parity inputs, equality of the three archive variants, exactly 52 complete repetitions, file output, and the slow-mode timing calls.
+The 23 standard-library tests verify the exact decoded outputs, malformed-source literal extraction, non-execution of issue code, shortest route, the witness contradiction, congruence correctness and minimality, all 256 eight-bit parity inputs, equality of the three archive variants, exactly 52 complete repetitions, file output, slow-mode timing calls, and the full repaired Last Debugger chain.
