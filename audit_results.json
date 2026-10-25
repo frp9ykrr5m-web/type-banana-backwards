@@ -1,0 +1,212 @@
+{
+  "5": {
+    "lock1_shift": 3,
+    "lock1": "THE KEY IS THE NUMBER OF LETTERS IN THE WORD SHIFT",
+    "lock1_instruction_key": 5,
+    "lock2_row_shift_values": [
+      3,
+      3,
+      3
+    ],
+    "lock2_per_row_shift": "TEHEA PIMH DHAPA",
+    "lock2_using_previous_answer_5": "RCFCY NGKF BFYNY",
+    "lock3_with_supplied_keyword_TRACE": "SZLXMS",
+    "lock4_first_BFS_route": "ADGJMPSVYZ",
+    "lock4_shortest_edge_count": 9,
+    "lock4_number_of_shortest_routes": 1,
+    "lock5_truth_counts_boxes_1_to_4": [
+      2,
+      3,
+      3,
+      3
+    ],
+    "lock5_valid_boxes": [],
+    "lock6_smallest_positive_x": 548,
+    "lock7_word_count": 12,
+    "lock7_direct_index_valid": false,
+    "lock8_anagrams": [
+      "TRACE",
+      "REACT",
+      "CATER",
+      "CARET",
+      "CARTE",
+      "CRATE"
+    ],
+    "lock9_correct_parity": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "lock9_letters": "AABBABBB",
+    "lock9_posted_initial_23": [
+      23,
+      23,
+      22,
+      22,
+      23,
+      22,
+      22,
+      22
+    ],
+    "complete": false,
+    "blockers": [
+      "Lock 1 implies key 5, but Lock 2 embeds 3 in every row; neither interpretation yields a readable clue.",
+      "Lock 3 hard-codes TRACE rather than a valid answer from Lock 2; decoding its ciphertext gives no usable instruction.",
+      "Lock 5 is logically impossible: Bo/Cy guarantee one truth and Dee/Eli guarantee another, so there are always at least two truths.",
+      "Lock 6 yields 548, outside the 12-word Lock 7 phrase. No rule says to split its digits or wrap the index.",
+      "The supplied parity function starts at 23 instead of 0, producing 22/23 rather than binary parity.",
+      "Lock 10 cannot be assembled from missing/contradictory answers; a final punchline is not determined by the posted data."
+    ]
+  },
+  "4": {
+    "lock1_shift": 3,
+    "lock1": "THE KEY IS THE NUMBER OF LETTERS IN THE WORD SHIFT",
+    "lock1_instruction_key": 5,
+    "lock2_row_shift_values": [
+      3,
+      3,
+      3
+    ],
+    "lock2_per_row_shift": "TEHEA PIMH DHAPA",
+    "lock2_using_previous_answer_5": "RCFCY NGKF BFYNY",
+    "lock3_with_supplied_keyword_TRACE": "SZLXMS",
+    "lock4_first_BFS_route": "ADGJMPSVYZ",
+    "lock4_shortest_edge_count": 9,
+    "lock4_number_of_shortest_routes": 1,
+    "lock5_truth_counts_boxes_1_to_4": [
+      2,
+      3,
+      3,
+      3
+    ],
+    "lock5_valid_boxes": [],
+    "lock6_smallest_positive_x": 548,
+    "lock7_word_count": 12,
+    "lock7_direct_index_valid": false,
+    "lock8_anagrams": [
+      "TRACE",
+      "REACT",
+      "CATER",
+      "CARET",
+      "CARTE",
+      "CRATE"
+    ],
+    "lock9_correct_parity": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "lock9_letters": "AABBABBB",
+    "lock9_posted_initial_23": [
+      23,
+      23,
+      22,
+      22,
+      23,
+      22,
+      22,
+      22
+    ],
+    "complete": false,
+    "blockers": [
+      "Lock 1 implies key 5, but Lock 2 embeds 3 in every row; neither interpretation yields a readable clue.",
+      "Lock 3 hard-codes TRACE rather than a valid answer from Lock 2; decoding its ciphertext gives no usable instruction.",
+      "Lock 5 is logically impossible: Bo/Cy guarantee one truth and Dee/Eli guarantee another, so there are always at least two truths.",
+      "Lock 6 yields 548, outside the 12-word Lock 7 phrase. No rule says to split its digits or wrap the index.",
+      "The supplied parity function starts at 23 instead of 0, producing 22/23 rather than binary parity.",
+      "Lock 10 cannot be assembled from missing/contradictory answers; a final punchline is not determined by the posted data."
+    ]
+  },
+  "3": {
+    "lock1_shift": 3,
+    "lock1": "THE KEY IS THE NUMBER OF LETTERS IN THE WORD SHIFT",
+    "lock1_instruction_key": 5,
+    "lock2_row_shift_values": [
+      3,
+      3,
+      3
+    ],
+    "lock2_per_row_shift": "TEHEA PIMH DHAPA",
+    "lock2_using_previous_answer_5": "RCFCY NGKF BFYNY",
+    "lock3_with_supplied_keyword_TRACE": "SZLXMS",
+    "lock4_first_BFS_route": "ADGJMPSVYZ",
+    "lock4_shortest_edge_count": 9,
+    "lock4_number_of_shortest_routes": 1,
+    "lock5_truth_counts_boxes_1_to_4": [
+      2,
+      3,
+      3,
+      3
+    ],
+    "lock5_valid_boxes": [],
+    "lock6_smallest_positive_x": 548,
+    "lock7_word_count": 12,
+    "lock7_direct_index_valid": false,
+    "lock8_anagrams": [
+      "TRACE",
+      "REACT",
+      "CATER",
+      "CARET",
+      "CARTE",
+      "CRATE"
+    ],
+    "lock9_correct_parity": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "lock9_letters": "AABBABBB",
+    "lock9_posted_initial_23": [
+      23,
+      23,
+      22,
+      22,
+      23,
+      22,
+      22,
+      22
+    ],
+    "complete": false,
+    "blockers": [
+      "Lock 1 implies key 5, but Lock 2 embeds 3 in every row; neither interpretation yields a readable clue.",
+      "Lock 3 hard-codes TRACE rather than a valid answer from Lock 2; decoding its ciphertext gives no usable instruction.",
+      "Lock 5 is logically impossible: Bo/Cy guarantee one truth and Dee/Eli guarantee another, so there are always at least two truths.",
+      "Lock 6 yields 548, outside the 12-word Lock 7 phrase. No rule says to split its digits or wrap the index.",
+      "The supplied parity function starts at 23 instead of 0, producing 22/23 rather than binary parity.",
+      "Lock 10 cannot be assembled from missing/contradictory answers; a final punchline is not determined by the posted data."
+    ]
+  },
+  "2": {
+    "stage1_shift": 3,
+    "stage1_as_posted": "THE NE[T CLIE IS IN THE NUMBERS",
+    "stage2": "THE KEY IS STILL HIDDEN",
+    "stage3_with_supplied_key_KEY": "RZLYAR",
+    "stage3_with_stage2_word_HIDDEN": "QZKXLQ",
+    "stage4_letters_only": "THEPEOTWASTIUZZLNAS",
+    "stage4_posted_function": "THEPEOT!WASTIUZZLNAS",
+    "stage5_letters_only": "SNZUTATEET",
+    "stage5_posted_function": "SNZUTA!OPH",
+    "complete": false,
+    "blockers": [
+      "Stage 1 contains '[' and FOLH; shift 3 gives a corrupted clue rather than NEXT CLUE.",
+      "Stage 2 does not identify an unambiguous keyword; the supplied code separately hard-codes KEY.",
+      "The supplied keyed ciphertext and spiral do not yield the promised final sentence.",
+      "Stage 4 prose says letters only, but the supplied function keeps punctuation; the two final transforms differ."
+    ]
+  }
+}
